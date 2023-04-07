@@ -1,0 +1,284 @@
+.error_input {
+    border-color: #ff0000 !important;
+    box-shadow: 0 0 1px #ff0000 inset, 0 0 2px #ff0000 inset, 0 0 3px #ff0000 inset, 0 0 4px #ff0000 inset, 0 0 5px #ff0000 inset !important;
+    color: #ff0000 !important;
+}
+
+.forma_vopros input[type="text"],
+.forma_vopros input[type="tel"],
+.forma_vopros input[type="email"] {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #E5E5E5;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    height: 50px;
+    margin: 0 auto 15px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.intl-tel-input {
+    width: 100%;
+    margin: 0 auto 15px;
+}
+
+.forma_vopros textarea {
+    background: #f0f0f2 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3) inset;
+    font-size: 18px;
+    margin: 0 auto 15px;
+    min-height: 100px;
+    padding: 20px;
+    width: 100%;
+}
+
+.forma_vopros .submit {
+    font-size: 22px;
+    height: 60px;
+    width: 100%;
+}
+
+.zakazatli_site {
+    text-align: center;
+}
+
+.zakaz_sit {
+    color: #111;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0 auto 10px;
+}
+
+.zak_form {
+    color: #666;
+    margin: 5px auto 25px;
+}
+
+.thx_pop {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+#my-popup {
+    max-width: 700px !important;
+    padding: 30px 50px 40px;
+}
+
+.pop_cart {
+    padding: 30px !important;
+}
+
+#cart .content.white-popup {
+    border-radius: 10px;
+    margin: 25px 20px;
+    overflow: visible;
+}
+
+.action a.gost {
+    background: #ececec none repeat scroll 0 0;
+    border: 1px solid #ececec;
+    border-radius: 50px;
+    color: #333e48;
+    float: left;
+    font-weight: normal;
+    line-height: 27px;
+    min-width: 50px;
+    padding: 5px 15px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#cart .mfp-close {
+    background: #fed700 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    height: 40px;
+    line-height: 1.2;
+    opacity: 1;
+    padding: 0 !important;
+    right: -20px;
+    text-align: center;
+    top: -20px;
+    width: 40px;
+}
+
+#cart .action .button.btn {
+    float: right;
+    font-size: 20px;
+    min-width: 45%;
+    padding: 10px 30px;
+}
+
+#cart .action a.gost {
+    float: left;
+    font-size: 20px;
+    min-width: 45%;
+    padding: 10px 30px;
+}
+
+#header .action .button.btn {
+    float: none;
+    width: auto;
+}
+
+.mfp-content .subtotal {
+    margin: 10px 25px 0;
+}
+
+.mfp-content .total_w {
+    padding: 5px 15px;
+}
+
+.polt_file_upload_w {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #fff;
+    background-color: #84ba3f;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.polt_file_upload_w:hover {
+    background: #353535;
+}
+
+.polt_files_w {
+    margin: 0 auto 15px;
+}
+
+.add_file_polt {
+    display: inline-block;
+    border-bottom: 1px dashed #666;
+}
+
+.add_file_polt:hover {
+    cursor: pointer;
+    border-bottom: 1px dashed transparent;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + .label {
+    font-size: 1.25em;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.inputfile:focus + .label,
+.inputfile:hover + .label {
+}
+
+.inputfile + .label {
+    cursor: pointer;
+    float: left;
+}
+
+.polt_file_upload_clear {
+    display: none;
+}
+
+.has_file .polt_file_upload_clear {
+    display: block;
+}
+
+.polt_file_upload_remove, .has_file .polt_file_upload_clear {
+    float: left;
+    font-weight: bold;
+    margin: 5px 0 0 10px;
+    font-size: 20px;
+    background: #0006;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.inputfile:focus + .label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + .label * {
+    pointer-events: none;
+    font-weight: normal;
+}
+
+.js .inputfile {
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.no-js .inputfile + .label {
+    display: none;
+}
+
+.inputfile:focus + .label,
+.inputfile.has-focus + .label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + .label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.error_input + .label:after {
+    border: 5px solid #ff0000;
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3) inset;
+}
+
+/* max-width: 991 */
+@media (max-width: 991px) {
+    .forma_vopros .submit {
+        font-size: 16px;
+        height: 50px;
+    }
+    .zak_form br {
+        display: none;
+    }
+    .zakaz_sit {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+    .zak_form {
+        font-size: 14px;
+    }
+
+}
+/*end max-width: 991 */
