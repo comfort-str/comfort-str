@@ -17277,7 +17277,7 @@ transform: translateX(-200%);
 
             </style>
             <div id="modal_pop1" class = "modal_pop_class" >
-                <form class="modal-content animate" action="send.php" method="post">
+                <form class="modal-content animate" action="spaibe.html" method="post">
                     <div class="imgcontainer">
                       <span onclick="document.getElementById('modal_pop1').style.display='none'" class="close" title="Close Modal">×</span>     
                       <img src="images/korsa/korsakacheljasadovaja(4)-1000x666.webp" alt="Avatar" class="avatar">
@@ -17312,7 +17312,39 @@ transform: translateX(-200%);
                 var end_senks = document.getElementById('end_senks');
                 modal_sanks_button.onclick = function(){
                     
-                    modal_sanks.style.display = "block";
+                    var uname = document.getElementsByName('uname')[0].value;
+                    var tel = document.getElementsByName('tel')[0].value;
+                    var mess = document.getElementsByName('mess')[0].value;
+                    var qwe = window.location.href;
+                  var data_js = {
+                    "access_token": "inf0tchtif4ake4noqgkytr1"
+                  };
+                  var form_id_js = "javascript_form";
+                  function toParams(data_jsq) {
+                    var form_data = [];
+                    for ( var key in data_jsq ) {
+                      form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_jsq[key]));
+                    }
+
+                    return form_data.join("&");
+                  }
+
+                  var request = new XMLHttpRequest();
+
+                  data_js['subject'] = "Заявка с сайта";
+                  data_js['text'] = "Имя: " + uname + "   телефон: " + tel + "    мессенджер: " + mess + "    товар: " + qwe;
+                  var params = toParams(data_js);
+
+                  request.open("POST", "https://postmail.invotes.com/send", true);
+                  request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+                  request.send(params);
+                  let q = 0
+                  while(true){
+                    if(q++ > 300000000)
+                      break;
+                  }
+                  modal_sanks.style.display = "block";
                 }
                 end_senks.onclick = function(){
                     
