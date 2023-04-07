@@ -24,7 +24,7 @@ $fd = fopen("textfile.txt",'w') or die ("Error");
 $str = "Заявка с сайта ФИО: \r\n".$fio. ". Telephone: \r\n".$tel ."Messager:  \r\n".$polt. " Info - tovar:  ".$info;
 
 $redirect_url = "/spaibe.html";
-if (mail("relaxgorod@gmail.com", "Заявка с сайта", $str))
+if (mail("comfort.str1@gmail.com", "Заявка с сайта", $str))
 {     
     header('Location: http://'.$_SERVER['HTTP_HOST'].$redirect_url);
     exit();
